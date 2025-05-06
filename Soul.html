@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي سول للأردوينو والروبوتات | تعلم وتطور معنا</title>
+    <meta name="description" content="نادي متخصص في تعلم الأردوينو والروبوتات والذكاء الاصطناعي، ورش عمل، دورات تدريبية، مشاريع تقنية">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- شريط التحميل -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="robot-loader">
+                <div class="robot-head"></div>
+                <div class="robot-body"></div>
+                <div class="robot-arm left"></div>
+                <div class="robot-arm right"></div>
+            </div>
+            <p>جاري التحميل...</p>
+        </div>
+    </div>
+
+    <!-- زر العودة للأعلى -->
+    <button id="back-to-top" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="شعار نادي سول" class="logo-img">
+            <div class="logo-text">
+                <h1>نادي سول</h1>
+                <p>للأردوينو والروبوتات</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-section="home">الرئيسية</a></li>
+                <li><a href="#about" data-section="about">من نحن</a></li>
+                <li><a href="#courses" data-section="courses">الدورات</a></li>
+                <li><a href="#projects" data-section="projects">المشاريع</a></li>
+                <li><a href="#gallery" data-section="gallery">معرض الصور</a></li>
+                <li><a href="#blog" data-section="blog">المدونة</a></li>
+                <li><a href="#contact" data-section="contact">اتصل بنا</a></li>
+                <li class="nav-cta"><a href="#register" class="btn btn-register">سجل الآن</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-down" data-aos-delay="300">ابدأ رحلتك في عالم الروبوتات والأردوينو</h1>
+            <p data-aos="fade-down" data-aos-delay="500">نادي سول يوفر لك كل ما تحتاجه لتصبح خبيرًا في البرمجة والإلكترونيات</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="700">
+                <a href="#courses" class="btn btn-primary">استكشف الدورات</a>
+                <a href="#register" class="btn btn-secondary">انضم إلينا</a>
+            </div>
+        </div>
+        <div class="hero-robot" data-aos="fade-left" data-aos-delay="900">
+            <img src="images/robot.png" alt="روبوت تعليمي">
+        </div>
+        <div class="scroll-down">
+            <span>مرر للأسفل</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- إحصائيات النادي -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-users"></i>
+                <h3 class="counter" data-target="1500">0</h3>
+                <p>عضو</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-graduation-cap"></i>
+                <h3 class="counter" data-target="45">0</h3>
+                <p>دورة تدريبية</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-project-diagram"></i>
+                <h3 class="counter" data-target="120">0</h3>
+                <p>مشروع تقني</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-trophy"></i>
+                <h3 class="counter" data-target="28">0</h3>
+                <p>جائزة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 data-aos="fade-down">من نحن</h2>
+            <p data-aos="fade-down" data-aos-delay="100">تعرف على نادي سول ورسالتنا ورؤيتنا</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>نادي سول للأردوينو والروبوتات</h3>
+                <p>تأسس نادي سول في عام 2023 كمبادرة تعليمية تهدف إلى نشر ثقافة البرمجة والإلكترونيات والروبوتات بين الشباب والهواة. نحن نؤمن بقوة التكنولوجيا في تغيير المستقبل ونسعى لتمكين الأفراد من مهارات القرن الحادي والعشرين.</p>
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h4><i class="fas fa-bullseye"></i> رسالتنا</h4>
+                        <p>تمكين الشباب من خلال توفير بيئة تعليمية إبداعية في مجال التقنية والهندسة.</p>
+                    </div>
+                    <div class="vision">
+                        <h4><i class="fas fa-eye"></i> رؤيتنا</h4>
+                        <p>الريادة في تعليم التقنية وتطوير جيل مبدع قادر على مواكبة الثورة الصناعية الرابعة.</p>
+                    </div>
+                </div>
+                <a href="#register" class="btn btn-primary">انضم إلى رحلتنا</a>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <div class="image-container">
+                    <img src="images/about.jpg" alt="فريق نادي سول">
+                    <div class="experience-badge">
+                        <span>5+</span>
+                        <p>سنوات خبرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدورات -->
+    <section id="courses" class="section bg-gray">
+        <div class="section-header">
+            <h2 data-aos="fade-down">دوراتنا التدريبية</h2>
+            <p data-aos="fade-down" data-aos-delay="100">اكتشف برامجنا التعليمية المصممة خصيصًا لك</p>
+        </div>
+        <div class="courses-container">
+            <div class="course-categories" data-aos="fade-right">
+                <ul>
+                    <li class="active" data-category="all">الكل</li>
+                    <li data-category="arduino">الأردوينو</li>
+                    <li data-category="robotics">الروبوتات</li>
+                    <li data-category="ai">الذكاء الاصطناعي</li>
+                    <li data-category="iot">إنترنت الأشياء</li>
+                </ul>
+            </div>
+            <div class="courses-grid">
+                <!-- سيتم ملء هذا القسم بالدورات عبر JavaScript -->
+            </div>
+        </div>
+        <div class="view-all" data-aos="fade-up">
+            <a href="courses.html" class="btn btn-outline">عرض جميع الدورات</a>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 data-aos="fade-down">مشاريعنا</h2>
+            <p data-aos="fade-down" data-aos-delay="100">اكتشف إبداعات أعضاء نادي سول</p>
+        </div>
+        <div class="projects-tabs" data-aos="fade-up">
+            <ul>
+                <li class="active" data-filter="all">الكل</li>
+                <li data-filter="arduino">أردوينو</li>
+                <li data-filter="robotics">روبوتات</li>
+                <li data-filter="iot">إنترنت الأشياء</li>
+                <li data-filter="ai">ذكاء اصطناعي</li>
+            </ul>
+        </div>
+        <div class="projects-container">
+            <!-- سيتم ملء هذا القسم بالمشاريع عبر JavaScript -->
+        </div>
+        <div class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <!-- سيتم ملء هذا القسم عبر JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور -->
+    <section id="gallery" class="section bg-gray">
+        <div class="section-header">
+            <h2 data-aos="fade-down">معرض الصور</h2>
+            <p data-aos="fade-down" data-aos-delay="100">لحظات مميزة من فعالياتنا وورش العمل</p>
+        </div>
+        <div class="gallery-container">
+            <div class="swiper gallery-swiper">
+                <div class="swiper-wrapper">
+                    <!-- سيتم ملء هذا القسم عبر JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المدونة -->
+    <section id="blog" class="section">
+        <div class="section-header">
+            <h2 data-aos="fade-down">مدونة النادي</h2>
+            <p data-aos="fade-down" data-aos-delay="100">آخر المقالات والأخبار التقنية</p>
+        </div>
+        <div class="blog-container">
+            <!-- سيتم ملء هذا القسم عبر JavaScript -->
+        </div>
+        <div class="view-all" data-aos="fade-up">
+            <a href="blog.html" class="btn btn-outline">عرض جميع المقالات</a>
+        </div>
+    </section>
+
+    <!-- قسم التسجيل -->
+    <section id="register" class="section bg-dark">
+        <div class="register-container">
+            <div class="register-text" data-aos="fade-right">
+                <h2>انضم إلى نادي سول اليوم</h2>
+                <p>سجل في نادينا واحصل على العديد من المزايا الحصرية للاعضاء</p>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> وصول مجاني لجميع ورش العمل الأساسية</li>
+                    <li><i class="fas fa-check-circle"></i> خصومات على الدورات المتقدمة</li>
+                    <li><i class="fas fa-check-circle"></i> فرصة المشاركة في المسابقات والفعاليات</li>
+                    <li><i class="fas fa-check-circle"></i> دعم فني من خبراء النادي</li>
+                    <li><i class="fas fa-check-circle"></i> استخدام معمل النادي مجانًا</li>
+                </ul>
+            </div>
+            <div class="register-form" data-aos="fade-left">
+                <form id="registration-form">
+                    <h3>استمارة التسجيل</h3>
+                    <div class="form-group">
+                        <input type="text" id="reg-name" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="reg-email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="reg-phone" placeholder="رقم الهاتف" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="reg-level" required>
+                            <option value="" disabled selected>اختر مستوى الخبرة</option>
+                            <option value="beginner">مبتدئ</option>
+                            <option value="intermediate">متوسط</option>
+                            <option value="advanced">متقدم</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="reg-interests" placeholder="اهتماماتك التقنية (اختياري)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">سجل الآن</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشركاء -->
+    <section class="section partners">
+        <div class="section-header">
+            <h2 data-aos="fade-down">شركاؤنا</h2>
+            <p data-aos="fade-down" data-aos-delay="100">الجهات الداعمة لنا في رحلتنا</p>
+        </div>
+        <div class="partners-slider">
+            <div class="swiper partners-swiper">
+                <div class="swiper-wrapper">
+                    <!-- سيتم ملء هذا القسم عبر JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2 data-aos="fade-down">اتصل بنا</h2>
+            <p data-aos="fade-down" data-aos-delay="100">نحن هنا للإجابة على جميع استفساراتك</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>العنوان</h4>
+                        <p>الرياض، حي النخيل، شارع التقنية</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>info@soul-club.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>الهاتف</h4>
+                        <p>+966 12 345 6789</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>ساعات العمل</h4>
+                        <p>الأحد - الخميس: 9 ص - 5 م</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact-subject" placeholder="الموضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" placeholder="رسالتك" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-map" data-aos="fade-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.186894573926!2d46.67227631500086!3d24.83121998407099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3e9b4b92d9b%3A0x5a2a1e5b1a4b4b1a!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="images/logo-white.png" alt="شعار نادي سول" class="logo-img">
+                    <div class="logo-text">
+                        <h3>نادي سول</h3>
+                        <p>للأردوينو والروبوتات</p>
+                    </div>
+                </div>
+                <p>نادي سول هو مبادرة تعليمية تهدف إلى نشر ثقافة البرمجة والإلكترونيات والروبوتات بين الشباب والهواة.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#courses">الدورات</a></li>
+                    <li><a href="#projects">المشاريع</a></li>
+                    <li><a href="#blog">المدونة</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>الدورات</h4>
+                <ul>
+                    <li><a href="#">أساسيات الأردوينو</a></li>
+                    <li><a href="#">برمجة الروبوتات</a></li>
+                    <li><a href="#">الذكاء الاصطناعي للمبتدئين</a></li>
+                    <li><a href="#">إنترنت الأشياء</a></li>
+                    <li><a href="#">التصنيع الرقمي</a></li>
+                    <li><a href="#">رؤية الحاسوب</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>النشرة البريدية</h4>
+                <p>اشترك في نشرتنا البريدية لتصلك آخر الأخبار والعروض.</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="فيزا">
+                    <img src="images/mastercard.png" alt="ماستركارد">
+                    <img src="images/mada.png" alt="مدى">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 نادي سول للأردوينو والروبوتات. جميع الحقوق محفوظة.</p>
+            <div class="footer-links">
+                <a href="#">سياسة الخصوصية</a>
+                <a href="#">شروط الاستخدام</a>
+                <a href="#">الأسئلة الشائعة</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- مكتبات JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
